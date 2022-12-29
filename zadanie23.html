@@ -1,0 +1,94 @@
+<html>
+<body>
+<div style="color:red;font-size:33px;">
+ <script language="JavaScript">
+var b_rog=prompt("wczytaj b=","");
+var c_rog=prompt("wczytaj c=","");
+
+var pole_rog;
+var a_rog;
+var obw_rog;
+var alfa_rog;
+var beta_rog;
+var h1_rog;
+var h2_rog;
+var h3_rog;
+var ht1_rog;
+var ht2_rog;
+var ht3_rog;
+var pita;
+var suma;
+var alfa_rog;
+var beta_rog;
+var w90;
+var sin_rog;
+var cos_rog;
+var tg_rog;
+var ctg_rog;
+
+var a_rog=parseFloat(a_rog);
+var b_rog=parseFloat(b_rog);
+var c_rog=parseFloat(c_rog);
+
+pita=c_rog*c_rog-b_rog*b_rog
+a_rog=Math.sqrt(pita);
+pole_rog=(a_rog*b_rog)/2;
+obw_rog=a_rog+b_rog+c_rog;
+
+alfa_rog=Math.sin(a_rog/c_rog)*180/Math.PI;
+beta_rog=90-alfa_rog;
+
+h1_rog=a_rog;
+h2_rog=b_rog;
+h3_rog=(a_rog*b_rog)/c_rog;
+
+sin_rog=a_rog/c_rog;
+cos_rog=b_rog/c_rog;
+tg_rog=a_rog/b_rog;
+ctg_rog=b_rog/a_rog;
+
+document.write("*******************************");
+document.write ("<br>");
+document.write("bok a = "+a_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("bok b = "+b_rog+"");
+document.write ("<br>");
+document.write("bok c = "+c_rog+"");
+document.write ("<br>");
+document.write("*******************************");
+document.write ("<br>");
+document.write("Pole = "+pole_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("Obwód = "+obw_rog+"");
+document.write ("<br>");
+document.write("*******************************");
+document.write ("<br>");
+document.write("kąt prosty = 90");
+document.write ("<br>");
+document.write("alfa = "+alfa_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("beta = "+beta_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("*******************************");
+document.write ("<br>");
+document.write("h1 = "+h1_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("h2 = "+h2_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("h3 = "+h3_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("*******************************");
+document.write ("<br>");
+document.write("sin_alfa = "+sin_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("cos_alfa = "+cos_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("tg_alfa = "+tg_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("ctg_alfa = "+ctg_rog.toFixed(3)+"");
+document.write ("<br>");
+document.write("*******************************");
+ </script>
+</div>
+</body>
+</html>
